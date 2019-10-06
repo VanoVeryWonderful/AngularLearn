@@ -1,0 +1,9 @@
+<div *ngIf="productDetail" >
+  <h2>{{productDetail.title | titlecase}} Details</h2>
+  <div><span>id: </span>{{productDetail.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="productDetail.title" placeholder="name" />
+    </label>
+  </div>
+</div>
